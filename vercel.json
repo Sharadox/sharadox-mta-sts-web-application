@@ -14,6 +14,6 @@
     }
   ],
   "redirects": [
-    { "source": "/((?!\\.well-known/mta-sts\\.txt$).*)", "destination": "https://sharadox.com", "permanent": true }
+    { "source": "/((?!\\.well-known/mta-sts\\.txt$).*)", "destination": "https://sharadox.com", "permanent": false }
   ]
 }
