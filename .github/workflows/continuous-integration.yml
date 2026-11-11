@@ -1,0 +1,23 @@
+# Branch flow and checks come from Sharadox/git-hub-action-library (see its README).
+name: Continuous integration
+on:
+  push:
+  pull_request:
+    branches: [index, development]
+concurrency: { group: "${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}", cancel-in-progress: true }
+jobs:
+  branch-flow:
+    name: Branch flow
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: Sharadox/git-hub-action-library/branch-flow@v0.1.1
+  verify:
+    name: Verify
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Sharadox/git-hub-action-library/verify@v0.1.1
+        with:
+          tasks: format:check type-check test:unit
