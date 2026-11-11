@@ -7,7 +7,7 @@
   "author": "Sharadox <contact@sharadox.com>",
   "type": "module",
   "engines": {
-    "node": ">=24"
+    "node": "26.x"
   },
   "packageManager": "pnpm@10.34.9",
   "scripts": {
@@ -19,9 +19,9 @@
     "prepare": "turborepo-configuration node"
   },
   "devDependencies": {
-    "@sharadox/prettier-configuration-web-library": "^0.1.0",
-    "@sharadox/turborepo-configuration-web-library": "^0.1.0",
-    "@sharadox/type-script-configuration-web-library": "^0.2.0",
+    "@sharadox/prettier-configuration-web-library": "^0.1.1",
+    "@sharadox/turborepo-configuration-web-library": "^0.1.1",
+    "@sharadox/type-script-configuration-web-library": "^0.2.1",
     "@types/node": "^24.19.2",
     "prettier": "^3.10.0",
     "turbo": "^2.11.10",
