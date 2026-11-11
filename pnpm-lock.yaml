@@ -9,14 +9,14 @@ importers:
   .:
     devDependencies:
       '@sharadox/prettier-configuration-web-library':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
       '@sharadox/turborepo-configuration-web-library':
-        specifier: ^0.1.0
-        version: 0.1.0(turbo@2.11.10)
+        specifier: ^0.1.1
+        version: 0.1.1(turbo@2.11.10)
       '@sharadox/type-script-configuration-web-library':
-        specifier: ^0.2.0
-        version: 0.2.0(typescript@6.0.3)
+        specifier: ^0.2.1
+        version: 0.2.1(typescript@6.0.3)
       '@types/node':
         specifier: ^24.19.2
         version: 24.19.2
@@ -168,20 +168,20 @@ packages:
   '@rolldown/pluginutils@1.1.0':
     resolution: {integrity: sha512-K+NU2HDCEem4sClgHH4ZZXwdJeNFkJo+hRk479DIwdIviAPN2hFJH1KHHwg8CxHQXvi0M5XY4deTXINfIiSG6w==}
 
-  '@sharadox/prettier-configuration-web-library@0.1.0':
-    resolution: {integrity: sha512-OOuZzYYcjZSC7wtj3R+dFLdwholBpSPWXG+fhl3UQZdsUvp7M8kyGRFtJTGXc7VB9BGFEE95ZTkuo4R93/SLHg==}
-    engines: {node: '>=24'}
+  '@sharadox/prettier-configuration-web-library@0.1.1':
+    resolution: {integrity: sha512-isV5gr/ku2DzfzIC+VlaxtuCBDwoV9ccMec3lvRn7/Gih1E5HW1+tV0YrxDwBH+wjaFiDuAQO6UTZNM5+N4rDw==}
+    engines: {node: '>=26'}
 
-  '@sharadox/turborepo-configuration-web-library@0.1.0':
-    resolution: {integrity: sha512-7vRccpzTWe/irYpkWhWcRkBigB2L0GiIA7Zt0faPsZk02Bpy+ipzCeMfXfqyAkQ9yt/EKGGy+OY2IPZbeiG1lw==}
-    engines: {node: '>=24'}
+  '@sharadox/turborepo-configuration-web-library@0.1.1':
+    resolution: {integrity: sha512-0czQ8JbeeYY7BqX2MRSJMXxm42FObdlYHeqZyg2CKEiN1apPOmq2SOI58mGObe17mfPofloLzUwTWoSJupsSKQ==}
+    engines: {node: '>=26'}
     hasBin: true
     peerDependencies:
       turbo: '>=2'
 
-  '@sharadox/type-script-configuration-web-library@0.2.0':
-    resolution: {integrity: sha512-k+g4Al5SCNLGkXHBP/TwU+2+NLpbcoZAIfiqM1C8Iq2BnS3E4Dpg+d/vlXg6gUfZeF2jl8fuWSn96Uzm012+FA==}
-    engines: {node: '>=24'}
+  '@sharadox/type-script-configuration-web-library@0.2.1':
+    resolution: {integrity: sha512-XQm+2mvi/WbDLI8q4ZTDWRUL0sD+0PSZeVt4YZvkQcyXxX+FF+Enb+yyQmmEW1PAfjrEE5vjPX7GbYrQMMWafA==}
+    engines: {node: '>=26'}
     peerDependencies:
       typescript: '>=6'
 
@@ -600,13 +600,13 @@ snapshots:
 
   '@rolldown/pluginutils@1.1.0': {}
 
-  '@sharadox/prettier-configuration-web-library@0.1.0': {}
+  '@sharadox/prettier-configuration-web-library@0.1.1': {}
 
-  '@sharadox/turborepo-configuration-web-library@0.1.0(turbo@2.11.10)':
+  '@sharadox/turborepo-configuration-web-library@0.1.1(turbo@2.11.10)':
     dependencies:
       turbo: 2.11.10
 
-  '@sharadox/type-script-configuration-web-library@0.2.0(typescript@6.0.3)':
+  '@sharadox/type-script-configuration-web-library@0.2.1(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
 

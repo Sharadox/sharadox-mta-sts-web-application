@@ -22,9 +22,9 @@ The MTA-STS policy for sharadox.com mail, served at https://mta-sts.sharadox.com
 - `pnpm verify` runs formatting, types and tests.
 - **Branch flow:** `<feature>.development` → `development` (squash) → `index` (merge commit).
 
-## Licence
+## License
 
-The source is public to read and verify under the Sharadox Verifiable Source Licence, version 0.1.0:
+The source is public to read and verify under the Sharadox Verifiable Source License, version 0.1.0:
 
 - `LICENCA.md`: the Portuguese original, which prevails.
 - `LICENSE.md`: the English translation.
