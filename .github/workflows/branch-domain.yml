@@ -1,0 +1,17 @@
+# Serves every <feature>.development branch on <feature>.development.<BASE_DOMAIN> while it exists. Repositories
+# without the BASE_DOMAIN variable (sites still on Vercel's own addresses) are skipped. Needs the Vercel team login.
+name: Branch domain
+on: [create, delete]
+jobs:
+  domain:
+    name: Branch domain
+    if: github.event.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: Sharadox/git-hub-action-library/branch-domain@v0.1.3
+        with:
+          base-domain: ${{ vars.BASE_DOMAIN }}
+          vercel-project-id: ${{ vars.VERCEL_PROJECT_ID }}
+          vercel-team-id: ${{ vars.VERCEL_TEAM_ID }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
