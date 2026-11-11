@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      - uses: Sharadox/git-hub-action-library/branch-flow@v0.1.1
+      - uses: Sharadox/git-hub-action-library/branch-flow@v0.1.5
   verify:
     name: Verify
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: Sharadox/git-hub-action-library/verify@v0.1.1
+      - uses: Sharadox/git-hub-action-library/verify@v0.1.5
         with:
           tasks: format:check type-check test:unit
