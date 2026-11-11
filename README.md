@@ -14,7 +14,7 @@ The MTA-STS policy for sharadox.com mail, served at https://mta-sts.sharadox.com
 ## Deploying
 
 - **Production:** the Vercel project `sharadox-mta-sts-web-application` serves `index` publicly on mta-sts.sharadox.com. MTA-STS must be readable without a login.
-- **Other branches:** `development` and `<feature>.development` deploy to Vercel's branch addresses, behind the team login.
+- **Other branches:** `development` on development.mta-sts.sharadox.com and each `<feature>.development` on `<feature>.development.mta-sts.sharadox.com` (the branch-domain workflow adds and removes them), behind the team login.
 - **When the policy changes:** update the id in the `_mta-sts.sharadox.com` TXT record (`v=STSv1; id=<new id>`), so mail servers fetch the policy again.
 
 ## Develop
