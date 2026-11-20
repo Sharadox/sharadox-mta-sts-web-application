@@ -11,6 +11,9 @@ importers:
       '@sharadox/prettier-configuration-web-library':
         specifier: ^0.1.1
         version: 0.1.1
+      '@sharadox/test-web-library':
+        specifier: ^0.7.0
+        version: 0.7.0(vitest@5.1.0(@types/node@24.19.2)(vite@8.3.8(@types/node@24.19.2)))
       '@sharadox/turborepo-configuration-web-library':
         specifier: ^0.1.1
         version: 0.1.1(turbo@2.11.10)
@@ -172,6 +175,24 @@ packages:
     resolution: {integrity: sha512-isV5gr/ku2DzfzIC+VlaxtuCBDwoV9ccMec3lvRn7/Gih1E5HW1+tV0YrxDwBH+wjaFiDuAQO6UTZNM5+N4rDw==}
     engines: {node: '>=26'}
 
+  '@sharadox/test-web-library@0.7.0':
+    resolution: {integrity: sha512-GkCuIIWYvzRSLpAZMUe+20zaUw/TvgrG9WfS6MmBRZ2awFktc1UXVuJT79Ts3ZyyzaOnY55fpt/Wm8pJtOatvQ==}
+    engines: {node: '>=26'}
+    peerDependencies:
+      '@playwright/test': '>=1.50'
+      motion: '>=12'
+      react: '>=19'
+      vitest: '>=5'
+    peerDependenciesMeta:
+      '@playwright/test':
+        optional: true
+      motion:
+        optional: true
+      react:
+        optional: true
+      vitest:
+        optional: true
+
   '@sharadox/turborepo-configuration-web-library@0.1.1':
     resolution: {integrity: sha512-0czQ8JbeeYY7BqX2MRSJMXxm42FObdlYHeqZyg2CKEiN1apPOmq2SOI58mGObe17mfPofloLzUwTWoSJupsSKQ==}
     engines: {node: '>=26'}
@@ -184,6 +205,10 @@ packages:
     engines: {node: '>=26'}
     peerDependencies:
       typescript: '>=6'
+
+  '@sharadox/web-library@0.8.0':
+    resolution: {integrity: sha512-5lqIUC05HtOmaUlnmZtxHCWyWcbziZqNfI761eCHYv1vZmcZifgATBSBaqgkk77zSHvoapLenQJrFocKWdTOtA==}
+    engines: {node: '>=26'}
 
   '@turbo/darwin-64@2.11.10':
     resolution: {integrity: sha512-By4idRap5+nLnMuRzLB4qkOPRlvNdyY1ne4VJYDyUoUB11H94k7uif9mbe3JT8JSNXs1D68uMcBj6hJ/jMQRvA==}
@@ -602,6 +627,12 @@ snapshots:
 
   '@sharadox/prettier-configuration-web-library@0.1.1': {}
 
+  '@sharadox/test-web-library@0.7.0(vitest@5.1.0(@types/node@24.19.2)(vite@8.3.8(@types/node@24.19.2)))':
+    dependencies:
+      '@sharadox/web-library': 0.8.0
+    optionalDependencies:
+      vitest: 5.1.0(@types/node@24.19.2)(vite@8.3.8(@types/node@24.19.2))
+
   '@sharadox/turborepo-configuration-web-library@0.1.1(turbo@2.11.10)':
     dependencies:
       turbo: 2.11.10
@@ -609,6 +640,8 @@ snapshots:
   '@sharadox/type-script-configuration-web-library@0.2.1(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
+
+  '@sharadox/web-library@0.8.0': {}
 
   '@turbo/darwin-64@2.11.10':
     optional: true
