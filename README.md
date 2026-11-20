@@ -9,7 +9,7 @@ The MTA-STS policy for sharadox.com mail, served at https://mta-sts.sharadox.com
   - The `mx` lines must match sharadox.com's MX records, which today point to Proton.
   - `max_age` is one day (86400), so a change reaches mail servers quickly. Keep it there.
 - **Serving:** `vercel.json` serves `public/` as plain text, with no build, and redirects every other path.
-- **Tests:** `source/policy/unit-test.ts` checks the policy and the serving rules.
+- **Tests:** `source/policy/unit-test.ts` runs test-web-library's `describeMailPolicy` on the policy and the serving rules.
 
 ## Deploying
 

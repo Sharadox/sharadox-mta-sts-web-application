@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@sharadox/prettier-configuration-web-library": "^0.1.1",
+    "@sharadox/test-web-library": "^0.7.0",
     "@sharadox/turborepo-configuration-web-library": "^0.1.1",
     "@sharadox/type-script-configuration-web-library": "^0.2.1",
     "@types/node": "^24.19.2",
